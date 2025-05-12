@@ -1,0 +1,123 @@
+[
+    {
+      "name": "Victoria Holmes",
+      "summary": "Brytyjska pisarka, najbardziej znana jako jedna z autorek serii 'Wojownicy' (ang. 'Warriors'). Brytyjska pisarka, najbardziej znana jako jedna z autorek serii 'Wojownicy' (ang. 'Warriors'). Brytyjska pisarka, najbardziej znana jako jedna z autorek serii 'Wojownicy' (ang. 'Warriors'). Brytyjska pisarka, najbardziej znana jako jedna z autorek serii 'Wojownicy' (ang. 'Warriors'). Brytyjska pisarka, najbardziej znana jako jedna z autorek serii 'Wojownicy' (ang. 'Warriors'). Brytyjska pisarka, najbardziej znana jako jedna z autorek serii 'Wojownicy' (ang. 'Warriors'). Brytyjska pisarka, najbardziej znana jako jedna z autorek serii 'Wojownicy' (ang. 'Warriors'). Brytyjska pisarka, najbardziej znana jako jedna z autorek serii 'Wojownicy' (ang. 'Warriors'). Brytyjska pisarka, najbardziej znana jako jedna z autorek serii 'Wojownicy' (ang. 'Warriors'). Brytyjska pisarka, najbardziej znana jako jedna z autorek serii 'Wojownicy' (ang. 'Warriors'). Brytyjska pisarka, najbardziej znana jako jedna z autorek serii 'Wojownicy' (ang. 'Warriors'). Brytyjska pisarka, najbardziej znana jako jedna z autorek serii 'Wojownicy' (ang. 'Warriors'). Brytyjska pisarka, najbardziej znana jako jedna z autorek serii 'Wojownicy' (ang. 'Warriors').",
+      "imageURL": "https://core.pyrkon.pl/app/uploads/sites/12/2024/08/Lydka-core-768x614.png",
+      "zones": ["literacka"]
+    },
+    {
+      "name": "Bonnie Wright",
+      "summary": "Aktorka znana z roli Ginny Weasley w serii filmów o Harrym Potterze.",
+      "imageURL": "https://core.pyrkon.pl/app/uploads/sites/12/2025/04/Bonnie-Wright-jpg-768x615.jpg",
+      "zones": ["filmowa"]
+    },
+    {
+      "name": "Anhyra",
+      "summary": "Uznana cosplayerka, jurorka konkursu na Projekt Własny.",
+      "imageURL": "https://core.pyrkon.pl/app/uploads/sites/12/2025/04/Zakladka-gosci-wiekszy-rozmiar-1000-x-800-768x614.png",
+      "zones": ["cosplay"]
+    },
+    {
+      "name": "Talon",
+      "summary": "Zwycięzca Maskarady, obecnie juror konkursu cosplay.",
+      "imageURL": "https://core.pyrkon.pl/app/uploads/sites/12/2025/04/Adrian_Rozenek_1000x800-768x614.png",
+      "zones": ["cosplay"]
+    },
+    {
+      "name": "Doktor z TikToka",
+      "summary": "Popularny twórca internetowy, znany z popularyzacji nauki na TikToku.",
+      "imageURL": "https://core.pyrkon.pl/app/uploads/sites/12/2025/03/vicky_core-768x614.png",
+      "zones": ["naukowa"]
+    },
+    {
+      "name": "Marta Burdynowicz",
+      "summary": "Wokalistka, znana z interpretacji piosenek z bajek.",
+      "imageURL": "https://core.pyrkon.pl/app/uploads/sites/12/2025/04/Anna-Fryzowicz-768x614.jpg",
+      "zones": ["naukowa"]
+    },
+    {
+      "name": "Marcin Januszkiewicz",
+      "summary": "Aktor i wokalista, specjalizujący się w piosenkach z filmów animowanych.",
+      "imageURL": "https://core.pyrkon.pl/app/uploads/sites/12/2025/04/Patryk-Zietara.png",
+      "zones": ["naukowa"]
+    },
+    {
+      "name": "Yatta-Tachi",
+      "summary": "Dziennikarka i edukatorka kultury japońskiej.",
+      "imageURL": "https://core.pyrkon.pl/app/uploads/sites/12/2025/04/Bish-by-Ness-Cosplay-Photography-768x614.jpg",
+      "zones": ["literacka"]
+    },
+    {
+      "name": "Tony Sandoval",
+      "summary": "Meksykański twórca komiksowy, autor dzieł o magicznym realizmie.",
+      "imageURL": "https://core.pyrkon.pl/app/uploads/sites/12/2024/08/Mark-core-768x614.png",
+      "zones": ["komiksowa"]
+    },
+    {
+      "name": "Katarzyna Berenika Miszczuk",
+      "summary": "Polska autorka książek fantasy i grozy, znana m.in. z cyklu 'Kwiat paproci'.",
+      "imageURL": "https://core.pyrkon.pl/app/uploads/sites/12/2025/02/Tim_portrait_1-1-768x576.jpeg",
+      "zones": ["literacka"]
+    },
+    {
+      "name": "Patricia Briggs",
+      "summary": "Amerykańska autorka urban fantasy, znana z serii o Mercy Thompson.",
+      "imageURL": "https://core.pyrkon.pl/app/uploads/sites/12/2025/04/Janina-Daily.jpg",
+      "zones": ["literacka"]
+    },
+    {
+      "name": "Mark Sheppard",
+      "summary": "Brytyjski aktor znany z ról w serialach 'Supernatural', 'Battlestar Galactica' i 'MacGyver'.",
+      "imageURL": "https://core.pyrkon.pl/app/uploads/sites/12/2025/04/Jacek-Kopczynski-768x651.jpeg",
+      "zones": ["filmowa"]
+    },
+    {
+      "name": "Kevin J. Anderson",
+      "summary": "Amerykański pisarz science fiction, autor m.in. Trylogii Akademii Jedi.",
+      "imageURL": "https://core.pyrkon.pl/app/uploads/sites/12/2025/02/Marcin-Adamczak-1-768x576.jpg",
+      "zones": ["literacka"]
+    },
+    {
+      "name": "Darick Robertson",
+      "summary": "Artysta komiksowy, współtwórca serii 'The BOYS', współpracował z Marvel Comics.",
+      "imageURL": "https://core.pyrkon.pl/app/uploads/sites/12/2025/03/jaga_core-768x614.png",
+      "zones": ["komiksowa"]
+    },
+    {
+      "name": "Studio Accantus",
+      "summary": "Polska grupa muzyczna znana z polskich wersji piosenek z musicali 'Hamilton' i 'SIX'.",
+      "imageURL": "https://core.pyrkon.pl/app/uploads/sites/12/2025/03/amadeusz_kocan_1000_800-768x614.png",
+      "zones": ["muzyczna"]
+    },
+    {
+      "name": "Łydka Grubasa",
+      "summary": "Polski zespół muzyczny łączący rock, heavy metal i folk, znany z utworu 'Rapapara'.",
+      "imageURL": "https://core.pyrkon.pl/app/uploads/sites/12/2025/04/Trine_1000x800-768x614.png",
+      "zones": ["muzyczna"]
+    },
+    {
+      "name": "Gloryhammer",
+      "summary": "Szkocki zespół powermetalowy, znany z epickich opowieści fantasy w swojej muzyce.",
+      "imageURL": "https://core.pyrkon.pl/app/uploads/sites/12/2025/04/Szymon-Kolodziejczyk_1000x800-768x614.png",
+      "zones": ["muzyczna"]
+    },
+    {
+      "name": "Tim Downie",
+      "summary": "Brytyjski aktor znany z ról w filmach 'Jak zostać królem', 'Paddington' oraz 'Les Misérables: Nędznicy'.",
+      "imageURL": "https://core.pyrkon.pl/app/uploads/sites/12/2025/04/Talon-by-tulfotografie-1-768x641.png",
+      "zones": ["filmowa"]
+    },
+    {
+      "name": "Miranda Otto",
+      "summary": "Australijska aktorka znana z roli księżniczki Éowiny w serii 'Władca Pierścieni'.",
+      "imageURL": "https://core.pyrkon.pl/app/uploads/sites/12/2025/04/Barbarian-_-ANhyra-2-768x525.jpg",
+      "zones": ["filmowa"]
+    },
+    {
+      "name": "Kevin McNally",
+      "summary": "Brytyjski aktor znany z roli pirata Gibbsa w serii 'Piraci z Karaibów'.",
+      "imageURL": "https://core.pyrkon.pl/app/uploads/sites/12/2025/04/Zakladka-gosci-wiekszy-rozmiar-1000-x-8002-768x614.png",
+      "zones": ["filmowa"]
+    }
+  ]
+  

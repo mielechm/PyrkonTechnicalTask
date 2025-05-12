@@ -2,6 +2,22 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.androidx.room)
+}
+
+room {
+    // Applies to 'demoDebug' only
+    schemaDirectory("demoDebug", "$projectDir/schemas/demoDebug")
+
+    // Applies to 'demoDebug' and 'demoRelease'
+    schemaDirectory("demo", "$projectDir/schemas/demo")
+
+    // Applies to 'demoDebug' and 'fullDebug'
+    schemaDirectory("debug", "$projectDir/schemas/debug")
+
+    // Applies to variants that aren't matched by other configurations.
+    schemaDirectory("$projectDir/schemas")
 }
 
 android {
@@ -49,6 +65,17 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.coil.compose)
+    implementation(libs.androidx.room)
+    ksp(libs.androidx.room.compiler)
+    ksp(libs.androidx.hilt.compiler)
+    implementation(libs.coroutines.core)
+    implementation(libs.coroutines.android)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.hilt.navigation)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.runtime.compose)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -56,4 +83,8 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    testImplementation(libs.coroutines.test)
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.mockito.kotlin)
+    testImplementation(libs.turbine)
 }
