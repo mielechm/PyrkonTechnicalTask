@@ -37,6 +37,7 @@ import androidx.navigation.NavController
 import coil.compose.SubcomposeAsyncImage
 import com.mielechm.pyrkontechnicaltask.R
 import com.mielechm.pyrkontechnicaltask.data.model.model.GuestItem
+import com.mielechm.pyrkontechnicaltask.utils.Destination
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -102,7 +103,7 @@ fun GuestsList(navController: NavController, viewModel: GuestsListViewModel = hi
                 guests.value.size / 2 + 1
             }
             items(itemCount) {
-                GuestsRow(rowIndex = it, guests = guests.value)
+                GuestsRow(navController = navController, rowIndex = it, guests = guests.value)
             }
         }
 
@@ -136,13 +137,13 @@ fun GuestsList(navController: NavController, viewModel: GuestsListViewModel = hi
 }
 
 @Composable
-fun GuestsRow(rowIndex: Int, guests: List<GuestItem>) {
+fun GuestsRow(navController: NavController, rowIndex: Int, guests: List<GuestItem>) {
     Column(modifier = Modifier.fillMaxWidth()) {
         Row(modifier = Modifier.fillMaxWidth()) {
-            GuestEntry(guest = guests[rowIndex * 2], modifier = Modifier.weight(1f))
+            GuestEntry(navController = navController, guest = guests[rowIndex * 2], modifier = Modifier.weight(1f))
             Spacer(modifier = Modifier.width(16.dp))
             if (guests.size >= rowIndex * 2 + 2) {
-                GuestEntry(guest = guests[rowIndex * 2 + 1], modifier = Modifier.weight(1f))
+                GuestEntry(navController = navController, guest = guests[rowIndex * 2 + 1], modifier = Modifier.weight(1f))
             } else {
                 Spacer(modifier = Modifier.weight(1f))
             }
@@ -152,8 +153,10 @@ fun GuestsRow(rowIndex: Int, guests: List<GuestItem>) {
 }
 
 @Composable
-fun GuestEntry(guest: GuestItem, modifier: Modifier) {
-    Card(modifier = modifier.shadow(4.dp)) {
+fun GuestEntry(navController: NavController, guest: GuestItem, modifier: Modifier) {
+    Card(modifier = modifier.shadow(4.dp), onClick = {
+        navController.navigate(Destination.GuestDetailsView(guest.name))
+    }) {
         Column {
             SubcomposeAsyncImage(
                 loading = {

@@ -3,4 +3,5 @@
     <string name="pyrkon_logo">Pyrkon logo</string>
     <string name="info_nothing_to_show">Brak wyników</string>
     <string name="info_search_guest">Wyszukaj Gościa…</string>
+    <string name="info_go_back">Powrót</string>
 </resources>

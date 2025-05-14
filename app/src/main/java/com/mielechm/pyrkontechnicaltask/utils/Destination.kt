@@ -7,4 +7,6 @@ class Destination {
     @Serializable
     data object GuestsListView
 
+    @Serializable
+    data class GuestDetailsView(val name: String)
 }
