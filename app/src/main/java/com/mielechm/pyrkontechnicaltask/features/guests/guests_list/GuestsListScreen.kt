@@ -19,8 +19,11 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
@@ -66,11 +69,27 @@ fun GuestsList(navController: NavController, viewModel: GuestsListViewModel = hi
     val isLoading = viewModel.isLoading.collectAsStateWithLifecycle()
     val error = viewModel.error.collectAsStateWithLifecycle()
     val guests = viewModel.guestItems.collectAsStateWithLifecycle()
-
+    val searchText by viewModel.searchText.collectAsState()
+    val isSearching by viewModel.isSearching.collectAsState()
     val context = LocalContext.current.applicationContext
 
     LaunchedEffect(true) {
         viewModel.getGuestDataFromLocalFile(context as Context, "guests.json")
+    }
+
+    TextField(
+        value = searchText,
+        onValueChange = viewModel::onSearchTextChange,
+        modifier = Modifier
+            .fillMaxWidth()
+            .shadow(4.dp),
+        placeholder = { Text(text = stringResource(R.string.info_search_guest)) }
+    )
+
+    if (isSearching) {
+        Box(modifier = Modifier.fillMaxSize()) {
+            CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
+        }
     }
 
     if (guests.value.isNotEmpty()) {

@@ -11,8 +11,15 @@ import com.mielechm.pyrkontechnicaltask.data.model.model.GuestItem
 import com.mielechm.pyrkontechnicaltask.repositories.LocalDbGuestRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.debounce
+import kotlinx.coroutines.flow.onEach
+import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.json.JSONException
@@ -21,20 +28,36 @@ import java.nio.charset.Charset
 import javax.inject.Inject
 
 
+@OptIn(FlowPreview::class)
 @HiltViewModel
 class GuestsListViewModel @Inject constructor(
     private val localDbGuestRepository: LocalDbGuestRepository,
 ) : ViewModel() {
 
-    private val _localFileData = MutableStateFlow<String>("")
-    val localFileData = _localFileData.asStateFlow()
     private val _error = MutableStateFlow("")
     val error = _error.asStateFlow()
     private val _isLoading = MutableStateFlow(false)
     val isLoading = _isLoading.asStateFlow()
-
+    private val _isSearching = MutableStateFlow(false)
+    val isSearching = _isSearching.asStateFlow()
+    private val _searchText = MutableStateFlow("")
+    val searchText = _searchText.asStateFlow()
     private val _guestItems = MutableStateFlow<List<GuestItem>>(emptyList())
-    val guestItems = _guestItems.asStateFlow()
+    val guestItems = searchText.debounce(500L).onEach { _isSearching.update { true } }
+        .combine(_guestItems) { text, guests ->
+            if (text.isBlank()) {
+                guests
+            } else {
+                guests.filter {
+                    it.name.contains(text, ignoreCase = true)
+                }
+            }
+        }.onEach { _isSearching.update { false } }
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), _guestItems.value)
+
+    fun onSearchTextChange(text: String) {
+        _searchText.value = text
+    }
 
     fun getGuestDataFromLocalFile(context: Context, filename: String) {
         viewModelScope.launch {
@@ -44,7 +67,6 @@ class GuestsListViewModel @Inject constructor(
                 val jsonString = withContext(Dispatchers.IO) {
                     readLocalJsonFile(context, filename)
                 }
-                _localFileData.value = jsonString
                 val itemType = object : TypeToken<List<GuestItem>>() {}.type
                 val items = Gson().fromJson<List<GuestItem>>(jsonString, itemType)
                 _guestItems.value = items
