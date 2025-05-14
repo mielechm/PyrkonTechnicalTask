@@ -1,11 +1,12 @@
 package com.mielechm.pyrkontechnicaltask.ui.theme
+
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.lightColorScheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
+import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.Immutable
 import androidx.compose.ui.graphics.Color
@@ -248,165 +249,165 @@ private val highContrastDarkColorScheme = darkColorScheme(
 )
 
 val extendedLight = ExtendedColorScheme(
-  categoryColor1 = ColorFamily(
-  categoryColor1Light,
-  onCategoryColor1Light,
-  categoryColor1ContainerLight,
-  onCategoryColor1ContainerLight,
-  ),
-  categoryColor2 = ColorFamily(
-  categoryColor2Light,
-  onCategoryColor2Light,
-  categoryColor2ContainerLight,
-  onCategoryColor2ContainerLight,
-  ),
-  categoryColor3 = ColorFamily(
-  categoryColor3Light,
-  onCategoryColor3Light,
-  categoryColor3ContainerLight,
-  onCategoryColor3ContainerLight,
-  ),
-  categoryColor4 = ColorFamily(
-  categoryColor4Light,
-  onCategoryColor4Light,
-  categoryColor4ContainerLight,
-  onCategoryColor4ContainerLight,
-  ),
+    categoryColor1 = ColorFamily(
+        categoryColor1Light,
+        onCategoryColor1Light,
+        categoryColor1ContainerLight,
+        onCategoryColor1ContainerLight,
+    ),
+    categoryColor2 = ColorFamily(
+        categoryColor2Light,
+        onCategoryColor2Light,
+        categoryColor2ContainerLight,
+        onCategoryColor2ContainerLight,
+    ),
+    categoryColor3 = ColorFamily(
+        categoryColor3Light,
+        onCategoryColor3Light,
+        categoryColor3ContainerLight,
+        onCategoryColor3ContainerLight,
+    ),
+    categoryColor4 = ColorFamily(
+        categoryColor4Light,
+        onCategoryColor4Light,
+        categoryColor4ContainerLight,
+        onCategoryColor4ContainerLight,
+    ),
 )
 
 val extendedDark = ExtendedColorScheme(
-  categoryColor1 = ColorFamily(
-  categoryColor1Dark,
-  onCategoryColor1Dark,
-  categoryColor1ContainerDark,
-  onCategoryColor1ContainerDark,
-  ),
-  categoryColor2 = ColorFamily(
-  categoryColor2Dark,
-  onCategoryColor2Dark,
-  categoryColor2ContainerDark,
-  onCategoryColor2ContainerDark,
-  ),
-  categoryColor3 = ColorFamily(
-  categoryColor3Dark,
-  onCategoryColor3Dark,
-  categoryColor3ContainerDark,
-  onCategoryColor3ContainerDark,
-  ),
-  categoryColor4 = ColorFamily(
-  categoryColor4Dark,
-  onCategoryColor4Dark,
-  categoryColor4ContainerDark,
-  onCategoryColor4ContainerDark,
-  ),
+    categoryColor1 = ColorFamily(
+        categoryColor1Dark,
+        onCategoryColor1Dark,
+        categoryColor1ContainerDark,
+        onCategoryColor1ContainerDark,
+    ),
+    categoryColor2 = ColorFamily(
+        categoryColor2Dark,
+        onCategoryColor2Dark,
+        categoryColor2ContainerDark,
+        onCategoryColor2ContainerDark,
+    ),
+    categoryColor3 = ColorFamily(
+        categoryColor3Dark,
+        onCategoryColor3Dark,
+        categoryColor3ContainerDark,
+        onCategoryColor3ContainerDark,
+    ),
+    categoryColor4 = ColorFamily(
+        categoryColor4Dark,
+        onCategoryColor4Dark,
+        categoryColor4ContainerDark,
+        onCategoryColor4ContainerDark,
+    ),
 )
 
 val extendedLightMediumContrast = ExtendedColorScheme(
-  categoryColor1 = ColorFamily(
-  categoryColor1LightMediumContrast,
-  onCategoryColor1LightMediumContrast,
-  categoryColor1ContainerLightMediumContrast,
-  onCategoryColor1ContainerLightMediumContrast,
-  ),
-  categoryColor2 = ColorFamily(
-  categoryColor2LightMediumContrast,
-  onCategoryColor2LightMediumContrast,
-  categoryColor2ContainerLightMediumContrast,
-  onCategoryColor2ContainerLightMediumContrast,
-  ),
-  categoryColor3 = ColorFamily(
-  categoryColor3LightMediumContrast,
-  onCategoryColor3LightMediumContrast,
-  categoryColor3ContainerLightMediumContrast,
-  onCategoryColor3ContainerLightMediumContrast,
-  ),
-  categoryColor4 = ColorFamily(
-  categoryColor4LightMediumContrast,
-  onCategoryColor4LightMediumContrast,
-  categoryColor4ContainerLightMediumContrast,
-  onCategoryColor4ContainerLightMediumContrast,
-  ),
+    categoryColor1 = ColorFamily(
+        categoryColor1LightMediumContrast,
+        onCategoryColor1LightMediumContrast,
+        categoryColor1ContainerLightMediumContrast,
+        onCategoryColor1ContainerLightMediumContrast,
+    ),
+    categoryColor2 = ColorFamily(
+        categoryColor2LightMediumContrast,
+        onCategoryColor2LightMediumContrast,
+        categoryColor2ContainerLightMediumContrast,
+        onCategoryColor2ContainerLightMediumContrast,
+    ),
+    categoryColor3 = ColorFamily(
+        categoryColor3LightMediumContrast,
+        onCategoryColor3LightMediumContrast,
+        categoryColor3ContainerLightMediumContrast,
+        onCategoryColor3ContainerLightMediumContrast,
+    ),
+    categoryColor4 = ColorFamily(
+        categoryColor4LightMediumContrast,
+        onCategoryColor4LightMediumContrast,
+        categoryColor4ContainerLightMediumContrast,
+        onCategoryColor4ContainerLightMediumContrast,
+    ),
 )
 
 val extendedLightHighContrast = ExtendedColorScheme(
-  categoryColor1 = ColorFamily(
-  categoryColor1LightHighContrast,
-  onCategoryColor1LightHighContrast,
-  categoryColor1ContainerLightHighContrast,
-  onCategoryColor1ContainerLightHighContrast,
-  ),
-  categoryColor2 = ColorFamily(
-  categoryColor2LightHighContrast,
-  onCategoryColor2LightHighContrast,
-  categoryColor2ContainerLightHighContrast,
-  onCategoryColor2ContainerLightHighContrast,
-  ),
-  categoryColor3 = ColorFamily(
-  categoryColor3LightHighContrast,
-  onCategoryColor3LightHighContrast,
-  categoryColor3ContainerLightHighContrast,
-  onCategoryColor3ContainerLightHighContrast,
-  ),
-  categoryColor4 = ColorFamily(
-  categoryColor4LightHighContrast,
-  onCategoryColor4LightHighContrast,
-  categoryColor4ContainerLightHighContrast,
-  onCategoryColor4ContainerLightHighContrast,
-  ),
+    categoryColor1 = ColorFamily(
+        categoryColor1LightHighContrast,
+        onCategoryColor1LightHighContrast,
+        categoryColor1ContainerLightHighContrast,
+        onCategoryColor1ContainerLightHighContrast,
+    ),
+    categoryColor2 = ColorFamily(
+        categoryColor2LightHighContrast,
+        onCategoryColor2LightHighContrast,
+        categoryColor2ContainerLightHighContrast,
+        onCategoryColor2ContainerLightHighContrast,
+    ),
+    categoryColor3 = ColorFamily(
+        categoryColor3LightHighContrast,
+        onCategoryColor3LightHighContrast,
+        categoryColor3ContainerLightHighContrast,
+        onCategoryColor3ContainerLightHighContrast,
+    ),
+    categoryColor4 = ColorFamily(
+        categoryColor4LightHighContrast,
+        onCategoryColor4LightHighContrast,
+        categoryColor4ContainerLightHighContrast,
+        onCategoryColor4ContainerLightHighContrast,
+    ),
 )
 
 val extendedDarkMediumContrast = ExtendedColorScheme(
-  categoryColor1 = ColorFamily(
-  categoryColor1DarkMediumContrast,
-  onCategoryColor1DarkMediumContrast,
-  categoryColor1ContainerDarkMediumContrast,
-  onCategoryColor1ContainerDarkMediumContrast,
-  ),
-  categoryColor2 = ColorFamily(
-  categoryColor2DarkMediumContrast,
-  onCategoryColor2DarkMediumContrast,
-  categoryColor2ContainerDarkMediumContrast,
-  onCategoryColor2ContainerDarkMediumContrast,
-  ),
-  categoryColor3 = ColorFamily(
-  categoryColor3DarkMediumContrast,
-  onCategoryColor3DarkMediumContrast,
-  categoryColor3ContainerDarkMediumContrast,
-  onCategoryColor3ContainerDarkMediumContrast,
-  ),
-  categoryColor4 = ColorFamily(
-  categoryColor4DarkMediumContrast,
-  onCategoryColor4DarkMediumContrast,
-  categoryColor4ContainerDarkMediumContrast,
-  onCategoryColor4ContainerDarkMediumContrast,
-  ),
+    categoryColor1 = ColorFamily(
+        categoryColor1DarkMediumContrast,
+        onCategoryColor1DarkMediumContrast,
+        categoryColor1ContainerDarkMediumContrast,
+        onCategoryColor1ContainerDarkMediumContrast,
+    ),
+    categoryColor2 = ColorFamily(
+        categoryColor2DarkMediumContrast,
+        onCategoryColor2DarkMediumContrast,
+        categoryColor2ContainerDarkMediumContrast,
+        onCategoryColor2ContainerDarkMediumContrast,
+    ),
+    categoryColor3 = ColorFamily(
+        categoryColor3DarkMediumContrast,
+        onCategoryColor3DarkMediumContrast,
+        categoryColor3ContainerDarkMediumContrast,
+        onCategoryColor3ContainerDarkMediumContrast,
+    ),
+    categoryColor4 = ColorFamily(
+        categoryColor4DarkMediumContrast,
+        onCategoryColor4DarkMediumContrast,
+        categoryColor4ContainerDarkMediumContrast,
+        onCategoryColor4ContainerDarkMediumContrast,
+    ),
 )
 
 val extendedDarkHighContrast = ExtendedColorScheme(
-  categoryColor1 = ColorFamily(
-  categoryColor1DarkHighContrast,
-  onCategoryColor1DarkHighContrast,
-  categoryColor1ContainerDarkHighContrast,
-  onCategoryColor1ContainerDarkHighContrast,
-  ),
-  categoryColor2 = ColorFamily(
-  categoryColor2DarkHighContrast,
-  onCategoryColor2DarkHighContrast,
-  categoryColor2ContainerDarkHighContrast,
-  onCategoryColor2ContainerDarkHighContrast,
-  ),
-  categoryColor3 = ColorFamily(
-  categoryColor3DarkHighContrast,
-  onCategoryColor3DarkHighContrast,
-  categoryColor3ContainerDarkHighContrast,
-  onCategoryColor3ContainerDarkHighContrast,
-  ),
-  categoryColor4 = ColorFamily(
-  categoryColor4DarkHighContrast,
-  onCategoryColor4DarkHighContrast,
-  categoryColor4ContainerDarkHighContrast,
-  onCategoryColor4ContainerDarkHighContrast,
-  ),
+    categoryColor1 = ColorFamily(
+        categoryColor1DarkHighContrast,
+        onCategoryColor1DarkHighContrast,
+        categoryColor1ContainerDarkHighContrast,
+        onCategoryColor1ContainerDarkHighContrast,
+    ),
+    categoryColor2 = ColorFamily(
+        categoryColor2DarkHighContrast,
+        onCategoryColor2DarkHighContrast,
+        categoryColor2ContainerDarkHighContrast,
+        onCategoryColor2ContainerDarkHighContrast,
+    ),
+    categoryColor3 = ColorFamily(
+        categoryColor3DarkHighContrast,
+        onCategoryColor3DarkHighContrast,
+        categoryColor3ContainerDarkHighContrast,
+        onCategoryColor3ContainerDarkHighContrast,
+    ),
+    categoryColor4 = ColorFamily(
+        categoryColor4DarkHighContrast,
+        onCategoryColor4DarkHighContrast,
+        categoryColor4ContainerDarkHighContrast,
+        onCategoryColor4ContainerDarkHighContrast,
+    ),
 )
 
 @Immutable
@@ -428,20 +429,20 @@ fun PyrkonTechnicalTaskTheme(
     dynamicColor: Boolean = true,
     content: @Composable() () -> Unit
 ) {
-  val colorScheme = when {
-      dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
-          val context = LocalContext.current
-          if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
-      }
-      
-      darkTheme -> darkScheme
-      else -> lightScheme
-  }
+    val colorScheme = when {
+        dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
+            val context = LocalContext.current
+            if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
+        }
 
-  MaterialTheme(
-    colorScheme = colorScheme,
-    typography = AppTypography,
-    content = content
-  )
+        darkTheme -> darkScheme
+        else -> lightScheme
+    }
+
+    MaterialTheme(
+        colorScheme = colorScheme,
+        typography = AppTypography,
+        content = content
+    )
 }
 

@@ -1,4 +1,5 @@
 package com.mielechm.pyrkontechnicaltask.ui.theme
+
 import androidx.compose.ui.graphics.Color
 
 val primaryLight = Color(0xFF755085)

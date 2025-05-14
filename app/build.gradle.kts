@@ -1,23 +1,10 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.compose)
-    alias(libs.plugins.ksp)
-    alias(libs.plugins.androidx.room)
-}
-
-room {
-    // Applies to 'demoDebug' only
-    schemaDirectory("demoDebug", "$projectDir/schemas/demoDebug")
-
-    // Applies to 'demoDebug' and 'demoRelease'
-    schemaDirectory("demo", "$projectDir/schemas/demo")
-
-    // Applies to 'demoDebug' and 'fullDebug'
-    schemaDirectory("debug", "$projectDir/schemas/debug")
-
-    // Applies to variants that aren't matched by other configurations.
-    schemaDirectory("$projectDir/schemas")
+    alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.devtools.ksp)
+    alias(libs.plugins.dagger.hilt.android)
+    alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.jetbrains.kotlin.serialization)
 }
 
 android {
@@ -65,16 +52,22 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(libs.coil.compose)
-    implementation(libs.androidx.room)
-    ksp(libs.androidx.room.compiler)
-    ksp(libs.androidx.hilt.compiler)
+    implementation(libs.hilt.android)
     implementation(libs.coroutines.core)
     implementation(libs.coroutines.android)
+    ksp(libs.dagger.hilt.android.compiler)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.hilt.navigation)
-    implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.lifecycle.runtime.compose)
+    ksp(libs.androidx.hilt.compiler)
+    implementation(libs.androidx.room)
+    ksp(libs.androidx.room.compiler)
+    implementation(libs.kotlinx.serialization.json)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.gson)
+    implementation(libs.coil)
+    implementation(libs.coil.compose)
+    implementation(libs.coil.accompanist)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
